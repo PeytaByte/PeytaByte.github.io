@@ -1,0 +1,914 @@
+
+<title>what to do </title>
+<link rel = "icon" href = 
+"https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Question_Mark.svg/2560px-Question_Mark.svg.png" 
+        type = "image/x-icon">
+
+
+<div id="blackScrPop";></div>
+<div  id="popup">
+  <div style="  text-shadow: 7px 4px 0px #b99b9ba3;text-align: center; font-size: 400%; font-family: monospace; color: #2b5959; box-shadow: 0px 11px 4px 1px #0000001c; width: 62vh;height: 11vh;background-color: bisque;position: absolute;left: 50%;top: 14%;transform: translate(-50%,-50%);" >
+    Seems like you don't know what to do 
+  </div>
+  <div style="font-family: monospace; text-align: center;position: absolute;top: 42%;font-size: 199%;color: antiquewhite;">
+    The "what to do" website helps you if you are bored, it has a wide range of activities. It can make segestions using AI to help make its decisions. We have options ranging from pool to watching a movie.
+  </div>
+  <center>
+    <button id="gotIt">
+      Got it 
+    </button>
+  </center>
+</div>  
+
+<div id="blackScrReplay";></div>
+<div  id="replaypop">
+  <div style="  text-shadow: 7px 4px 0px #b99b9ba3;text-align: center; font-size: 400%; font-family: monospace; color: #2b5959; box-shadow: 0px 11px 4px 1px #0000001c; width: 62vh;height:auto;background-color: bisque;position: absolute;left: 50%;top: 14%;transform: translate(-50%,-50%);" >
+  we recomend:
+</div>
+<div>
+  <img src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/68F024BD8DE1DF37A710BA2C9DF61CB4F4FB2636704DB029B0427A462B67B08B/scale?width=1200&aspectRatio=1.78&format=jpeg" alt="">
+</div>
+<button id="replay">
+  play again 
+</button>
+</div> 
+<!-- 
+  add in a reset button mid game
+--> 
+<div id="reset">
+RESET
+</div>
+<div>
+    <body style="margin:0px; background-color: #1d2d34;" >
+    
+    <div style="box-shadow: 0px 20px 20px 0px; color: #2b5959;font-family: monospace;text-align: center;font-size: xxx-large;text-transform: uppercase;width: 100%;background-color: #ebebeb;;">
+        what to do  
+    </div>
+    
+        <div style="  text-shadow: 7px 4px 0px #b99b9ba3;text-align: center; font-size: 720%; font-family: monospace; color: #2b5959; box-shadow: 0px 11px 4px 1px #0000001c; width: 62vh;height: 11vh;background-color: bisque;position: absolute;left: 50%;top: 14%;transform: translate(-50%,-50%);" >
+            Question 
+        </div>
+      <center>
+        <div id="questionBOX">
+          <h1 id="question">Are you bored?</h1>
+        </div>
+      </center>
+      
+        <div style="margin-top: 6%; margin-left: auto; margin-right: auto; height: 76vh;; width:70%; background-color: #315e5e;">
+        <button id="leftbtn"> NO </button>
+        <button id="rightbtn"> YES </button>
+    </div>    
+<div style="background-color: #132323;" class="slantedDivA"> </div>
+<div style="width: 100%; height: auto; background-color: #1d2d34; top: 120%; position: absolute;">
+    <div style="    background-color: #ffe4c4;">
+           <h4 style=" color: #315e5e; text-align: center; font-size: 608%;font-family: monospace;-webkit-text-stroke: thin; text-transform: uppercase;"> history</h4>
+    </div>
+    <div id="history">
+        
+    </div>
+</div>
+
+
+</body>
+<style>
+  #reset{
+  transition-duration: 0.4s;
+  text-shadow: 4px 1px 0px #b99b9ba3;
+  text-align: center;
+  font-size: 307%;
+  font-family: monospace;
+  color: #2b5959;
+  box-shadow: 9px 13px 0px 1px #0000000f;
+  width: auto;
+  height: 5vh;
+  position: absolute;
+  display: block;
+  transform: translate(-50%, 600%);
+  top: 50%;
+  left: 50%;
+  background-color: bisque;
+  padding: 0.3%;
+  }
+  #reset:hover{
+    box-shadow: 0px 2px 0px 1px #0000000f;;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color:rgb(193, 162, 124);
+  }
+  #blackScrReplay{
+    height: 100%;
+    width:100%;
+    background-color: rgba(0, 0, 0, 70%);
+    display: none;
+    position:absolute;
+    z-index: 2;
+  }
+  #blackScrPop{
+    height: 100%;
+    width:100%; 
+    background-color: rgba(0, 0, 0, 70%);
+    display: block;
+    position:absolute;
+    z-index: 2;
+  }
+  #replaypop{
+    display: none;
+        transition-duration: 0.4s;
+         transform: translate(-50%,-50%);
+         position: absolute;
+         width: 50%;  
+         height: 50%;
+         top: 50%;
+         left: 50%;
+         background-color: #132323;
+         box-shadow: 0px 1px 20px 20px #0302024d;
+         z-index: 3;
+  }
+  #replay{
+    text-shadow: 4px 1px 0px #b99b9ba3;
+    text-align: center;
+    font-size: 307%;
+    font-family: monospace;
+    color: #2b5959;
+    box-shadow: 9px 13px 0px 1px #0000000f;
+    width: auto;
+    height: 5vh;
+    position: absolute;
+    transform: translate(50%, 50%);
+    top: 78%;
+    left: 25%;
+    background-color: bisque;
+  }
+  #replay:hover{
+    background-color: rgb(207, 173, 132);
+    box-shadow: 0px 2px 0px 1px #0000000f;;
+    cursor: pointer;
+  }
+  #question{
+        text-align: center;
+        font-size: 500%;
+        font-family: monospace;
+        color: bisque;
+        display: none;
+        transition-duration: 0.4s;
+  }
+  #questionBOX{
+    display: block;
+    
+    transform: translate(-50%,-50%);
+    position: absolute;
+    width: unset;height: unset;
+    top: 50%;left: 50%;
+    background-color: #224444a8;
+    padding-left: 1%;
+    padding-right: 1%;
+    z-index: 3;
+  }
+    #popup{
+        display: block;
+        transition-duration: 0.4s;
+         transform: translate(-50%,-50%);
+         position: fixed;
+         width: 50%;
+         height: 50%;
+         top: 50%;
+         left: 50%;
+         background-color: #132323;
+         box-shadow: 0px 1px 20px 20px #0302024d;
+         z-index: 3;
+    }
+    #gotIt{
+        text-shadow: 4px 1px 0px #b99b9ba3;
+        text-align: center;
+        font-size: 307%;
+        font-family: monospace;
+        color: #2b5959;
+        box-shadow: 9px 13px 0px 1px #0000000f;
+        width: auto;
+        height: auto;
+        position: absolute;
+        transform: translate(-48%, 50%);
+        top: 78%;
+        left: 50%;
+        background-color: bisque;
+        transition-duration: 0.4s;
+    }
+    #gotIt:hover{
+        transition-duration: 0.4s;
+        background-color: rgb(206, 170, 126);
+        cursor: pointer;
+        box-shadow: 0px 2px 0px 1px #0000000f;;
+    }
+    #history{
+        transition-duration: 0.4s;
+        text-align: center;
+        margin: 2%;
+        font-size: 260%;
+        color: bisque;
+    }
+    .slantedDivA{
+      position: relat ive;
+      width: 100%;
+      height: 9%;
+      background: rgba(40, 40, 40, 1);
+      box-sizing: border-box;
+      padding: 30px;
+      color: #fff;
+      margin-bottom: 200px;
+    }
+    .slantedDivA:after{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background: inherit;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transform-origin: top left;
+      transform: skewY(4deg);
+    }
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+#rightbtn{
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 23%;
+  height: 85%;
+  margin-top: 6%;
+  margin-right: 37%;
+  left: 97%;position: relative;
+  border: black; 
+  background-color: #5da366;
+  color: #ebebeb;
+  font-family: 'Times New Roman', Times, serif; font-family: monospace;
+  font-size: xxx-large;
+  box-shadow: -18px 19px 0px 0px #01020224;
+}
+#rightbtn:hover {
+  background-color: #44814c; /* Green */
+  color: #c4c4c4;
+  box-shadow: -4px 6px 0px 0px #01020224;
+}
+#leftbtn{
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 23%;
+  height: 85%;
+  margin-top: 6%;
+  margin-left: -22%;
+  border: black;
+  background-color: #ac4949;
+  color: #ebebeb;
+  font-family:'Times New Roman', Times, serif;
+  font-family: monospace;
+  font-size: xxx-large;
+  box-shadow: 18px 19px 0px 0px #01020224;
+  
+}
+#leftbtn:hover {
+  background-color: #7a3434; /* Green */
+  color: #c4c4c4;
+  box-shadow: 4px 6px 0px 0px #01020224;
+}
+</style>
+
+<script >
+//make the pop up close 
+document.getElementById("gotIt").onclick=function(){
+    document.getElementById("popup").style.display = "none";
+    document.getElementById("question").style.display = "block"; 
+    document.getElementById("blackScrPop").style.display = "none"; 
+}
+//replay
+document.getElementById("replay").onclick=function(){
+    document.getElementById("replaypop").style.display = "none"; 
+    document.getElementById("question").innerHTML = q1;
+    document.getElementById("blackScrPop").style.display = "none"; 
+    document.getElementById("history").innerHTML += "<div style='color: white;'>------- we suggest you to "+ question +" ------- </div><br>";//---------ENDING---------
+    setTimeout(function(){
+    question = q1;
+    },500)
+}
+//reset 
+document.getElementById("reset").onclick=function(){
+  if(question!=q1){
+    alert("The Game Reset")
+    document.getElementById("history").innerHTML += "<div style='color: #bd5252;;'>------- RESET ------- </div><br>";//---------ENDING---------
+    document.getElementById("question").innerHTML = q1;
+    setTimeout(function(){
+      question = q1;
+    },500)
+  }
+}
+replay
+var q1 = "Are you bored?";
+var q2 = "Were you being productive?";
+var q3 = "Do you want to be productive";
+var q4 = "Go back to what you were doing";
+var q5 = "Do your homework";
+var q6 = "Do you feel like movies?";
+var q7 = "Do you feel like Drama?";
+var q8 = "try:The Greatest Showman";
+var q9 = "do you like  action?";
+var q10 = "try:Morbius";
+var q11 = "Horror?";
+var q12 = "try: Don't Breathe";
+var q13 = "Thriller ?";
+var q14 = "try: Bird Box";
+var q15 = "Comedy?";
+var q16 = "try: Deadpool";
+var q17 = "science fiction?";
+var q18 = "try: The Matrix Resurrections";
+var q19 = "Documentary?";
+var q20 = "try: Man on Wire";
+var q21 = "Do you like video games?"; 
+var q22 = "Do you like fighting games";
+var q23 = "try smash bros ";
+var q24 = "Do you like shooters";
+var q25 = "Try SUPERHOT";
+var q26 = "Do you like RPG's"; 
+var q27 = "Try God of war"; 
+var q28 = "Do you like Puzzle games";
+var q29 = "Try Monument Vally";
+var q30 = "Do you like books?"
+var q31 = "Try the Hobbit";
+var q32 = "Do you feel like sport?";
+var q33 = "Do you like ice skating?";
+var q34 = "You should go Ice Skating";
+var q35 = "You should go for a walk";
+var q36 = "Do you feel like food";
+var q37 = "Eat";
+var q38 = "Do you like pool?";
+var q39 = "You should play pool";
+var q40 = "Got nothing for you ";
+var question = q1;
+document.getElementById("rightbtn").onclick=function(){//start of the yes button 
+  if(question == q1){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q6;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q1 +"<br>";
+      question = q6;
+    },500)
+  }
+  if(question == q2){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q4;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q2 +"<br>";
+      question = q4;
+      document.getElementById("replaypop").style.display = "block"; 
+      document.getElementById("blackScrPop").style.display = "block"; 
+    },500)
+  }
+  if(question == q3){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q5;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q3 +"<br>";
+      question = q5;
+      document.getElementById("replaypop").style.display = "block"; 
+      document.getElementById("blackScrPop").style.display = "block"; 
+    },500)
+  }
+  if(question == q4){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q1;
+      document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q4 +"-------"+"<br>";//---------ENDING---------
+      question = q1;
+      document.getElementById("replaypop").style.display = "block"; 
+      document.getElementById("blackScrPop").style.display = "block"; 
+    },500)
+  }
+  if(question == q5){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q1;
+      document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q5 +"-------"+"<br>";//---------ENDING---------
+      question = q1;
+    },500)  }
+  if(question == q6){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q7;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q6 +"<br>";
+      question = q7;
+    },500)
+  }
+  if(question == q7){
+    setTimeout(function(){
+      document.getElementById("replaypop").style.display = "block"; 
+      document.getElementById("question").innerHTML = q8;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q7 +"<br>";
+      question = q8;
+      document.getElementById("blackScrPop").style.display = "block"; 
+    },500)
+  }
+  if(question == q8){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q1;
+      document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q8 +"-------"+"<br>";//---------ENDING---------
+      question = q1;
+    },500)
+  }
+  if(question == q9){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q10;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q9 +"<br>";
+      question = q10;
+      document.getElementById("replaypop").style.display = "block"; 
+      document.getElementById("blackScrPop").style.display = "block"; 
+    },500)
+    }
+  if(question == q10){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q1;
+      document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q10 +"-------"+"<br>";//---------ENDING---------
+      question = q1;
+    },500)
+  }
+  if(question == q11){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q12;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q11 +"<br>";
+      document.getElementById("replaypop").style.display = "block"; 
+      document.getElementById("blackScrPop").style.display = "block"; 
+      question = q12;
+    },500)
+  }
+  if(question == q12){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q1;
+      document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q12 +"-------"+"<br>";//---------ENDING---------
+      question = q1;
+    },500)
+  }
+  if(question == q13){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q14;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q13 +"<br>";
+      document.getElementById("replaypop").style.display = "block"; 
+      document.getElementById("blackScrPop").style.display = "block"; 
+      question = q14;
+    },500)
+  }
+  if(question == q14){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q1;
+      document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q14 +"-------"+"<br>";//---------ENDING---------
+      question = q1;
+    },500)
+  }
+  if(question == q15){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q16;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q15 +"<br>";
+      document.getElementById("replaypop").style.display = "block"; 
+      document.getElementById("blackScrPop").style.display = "block"; 
+      question = q16;
+    },500)
+  }
+  if(question == q16){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q1;
+      document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q16 +"-------"+"<br>";//---------ENDING---------
+      question = q1;
+    },500)
+  }
+  if(question == q17){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q18;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q17 +"<br>";
+      document.getElementById("replaypop").style.display = "block"; 
+      document.getElementById("blackScrPop").style.display = "block"; 
+      question = q18;
+    },500)
+  }
+  if(question == q18){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q1;
+      document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q18 +"-------"+"<br>";//---------ENDING---------
+      question = q1;
+    },500)
+  }
+  if(question == q19){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q20;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q19 +"<br>";
+      document.getElementById("replaypop").style.display = "block"; 
+      document.getElementById("blackScrPop").style.display = "block"; 
+      question = q20;
+    },500)
+  }
+  if(question == q20){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q1;
+      document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q20 +"-------"+"<br>";//---------ENDING---------
+      question = q1;
+    },500)
+  }
+  if(question == q21){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q22;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q21 +"<br>";
+      question = q22;
+    },500)
+  }
+  if(question == q22){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q23;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q22 +"<br>";
+      document.getElementById("replaypop").style.display = "block"; 
+      document.getElementById("blackScrPop").style.display = "block"; 
+      question = q23;
+    },500)
+  }
+  if(question == q23){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q1;
+      document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q23 +"-------"+"<br>";//---------ENDING---------
+      question = q1;
+    },500)
+  }
+  if(question == q24){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q25;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q24 +"<br>";
+      document.getElementById("replaypop").style.display = "block"; 
+      document.getElementById("blackScrPop").style.display = "block"; 
+      question = q25;
+    },500)
+  }
+  if(question == q25){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q1;
+      document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q25 +"-------"+"<br>";//---------ENDING---------
+      question = q1;
+    },500)
+  }  if(question == q26){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q27;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q26 +"<br>";
+      document.getElementById("replaypop").style.display = "block"; 
+      document.getElementById("blackScrPop").style.display = "block"; 
+      question = q27;
+    },500)
+  }  if(question == q27){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q1;
+      document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q27 +"-------"+"<br>";//---------ENDING---------
+      question = q1;
+    },500)
+  }  if(question == q28){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q29;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q28 +"<br>";
+      document.getElementById("replaypop").style.display = "block"; 
+      document.getElementById("blackScrPop").style.display = "block"; 
+      question = q29;
+    },500)
+  }  if(question == q29){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q1;
+      document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q29 +"-------"+"<br>";//---------ENDING---------
+      question = q1;
+    },500)
+  }  if(question == q30){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q31;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q30 +"<br>";
+      document.getElementById("replaypop").style.display = "block"; 
+      document.getElementById("blackScrPop").style.display = "block"; 
+      question = q31;
+    },500)
+  }  if(question == q31){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q1;
+      document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q31 +"-------"+"<br>";//---------ENDING---------
+      question = q1;
+    },500)
+  }  if(question == q32){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q33;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q32 +"<br>";
+      question = q33;
+    },500)
+  }  if(question == q33){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q34;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q33 +"<br>";
+      document.getElementById("replaypop").style.display = "block"; 
+      document.getElementById("blackScrPop").style.display = "block"; 
+      question = q34;
+    },500)
+  }  if(question == q34){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q1;
+      document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q34 +"-------"+"<br>";//---------ENDING---------
+      question = q1;
+    },500)
+  }  if(question == q35){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q1;
+      document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q35 +"-------"+"<br>";//---------ENDING---------
+      question = q1;
+    },500)
+  }  if(question == q36){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q37;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q36 +"<br>";
+      document.getElementById("replaypop").style.display = "block"; 
+      document.getElementById("blackScrPop").style.display = "block"; 
+      question = q37;
+    },500)
+  }  if(question == q37){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q1;
+      document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q37 +"-------"+"<br>";//---------ENDING---------
+      question = q1;
+    },500)
+  }  
+  if(question == q38){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q39;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q38 +"<br>";
+      question = q39;
+    },500)
+  }  
+  if(question == q39){
+    setTimeout(function(){
+      document.getElementById("question").innerHTML = q25;
+      document.getElementById("history").innerHTML += "you said yes to: "+ q39 +"<br>";
+      question = q25;
+    },500)}
+  if(question == q40){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+    document.getElementById("history").innerHTML += "-------"+"sorry. "+ q40 + ":( -------"+"<br>";//---------ENDING---------
+   question = q1;
+  },500)
+  }
+  
+}//end of the yes button 
+//--------------------------------------------------------------------------------------------------------------
+document.getElementById("leftbtn").onclick=function(){//start of the no button 
+  if(question == q1){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q2;
+   question = q2;
+   document.getElementById("history").innerHTML += "you said no to: "+ q1 +"<br>";
+  },500)}
+  if(question == q2){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q3;
+   question = q3;
+   document.getElementById("history").innerHTML += "you said no to: "+ q2 +"<br>";
+  },500)}
+  if(question == q3){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q6;
+   question = q6;
+   document.getElementById("history").innerHTML += "you said no to: "+ q3 +"<br>";
+  },500)}
+  if(question == q4){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q4 +"-------"+"<br>";//---------ENDING---------
+  },500)}
+  if(question == q5){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q5 +"-------"+"<br>";//---------ENDING---------
+  },500)}
+  if(question == q6){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q21;
+   question = q21;
+   document.getElementById("history").innerHTML += "you said no to: "+ q6 +"<br>";
+  },500)}
+  if(question == q7){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q9;
+   question = q9;
+   document.getElementById("history").innerHTML += "you said no to: "+ q7 +"<br>";
+  },500)}  
+  if(question == q8){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q8 +"-------"+"<br>";//---------ENDING---------
+  },500)}  
+  if(question == q9){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q11;
+   question = q11;
+   document.getElementById("history").innerHTML += "you said no to: "+ q9 +"<br>";
+  },500)}  
+  if(question == q10){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q10 +"-------"+"<br>";//---------ENDING---------
+  },500)}  
+  if(question == q11){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q13;
+   question = q13;
+   document.getElementById("history").innerHTML += "you said no to: "+ q11 +"<br>";
+  },500)}  
+  if(question == q12){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q12 +"-------"+"<br>";//---------ENDING---------
+  },500)}  
+  if(question == q13){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q15;
+   question = q15;
+   document.getElementById("history").innerHTML += "you said no to: "+ q13 +"<br>";
+  },500)}  
+  if(question == q14){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q14 +"-------"+"<br>";//---------ENDING---------
+  },500)}  
+  if(question == q15){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q17;
+   question = q17;
+   document.getElementById("history").innerHTML += "you said no to: "+ q15 +"<br>";
+  },500)}  
+  if(question == q16){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q16 +"-------"+"<br>";//---------ENDING---------
+  },500)}  
+  if(question == q17){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q19;
+   question = q19;
+   document.getElementById("history").innerHTML += "you said no to: "+ q17 +"<br>";
+  },500)}  
+  if(question == q18){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q18 +"-------"+"<br>";//---------ENDING---------
+  },500)}  
+  if(question == q19){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q21;
+   question = q21;
+   document.getElementById("history").innerHTML += "you said no to: "+ q19 +"<br>";
+  },500)}  
+  if(question == q20){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q20 +"-------"+"<br>";//---------ENDING---------
+  },500)}  
+  if(question == q21){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q30;
+   question = q30;
+   document.getElementById("history").innerHTML += "you said no to: "+ q21 +"<br>";
+  },500)}  
+  if(question == q22){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q24;
+   question = q24;
+   document.getElementById("history").innerHTML += "you said no to: "+ q22 +"<br>";
+  },500)}  
+  if(question == q23){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q23 +"-------"+"<br>";//---------ENDING---------
+  },500)}  
+  if(question == q24){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q26;
+   question = q26;
+   document.getElementById("history").innerHTML += "you said no to: "+ q24 +"<br>";
+  },500)}  
+  if(question == q25){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q25 +"-------"+"<br>";//---------ENDING---------
+  },500)}  
+  if(question == q26){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q28;
+   question = q28;
+   document.getElementById("history").innerHTML += "you said no to: "+ q26 +"<br>";
+  },500)}  
+  if(question == q27){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q27 +"-------"+"<br>";//---------ENDING---------
+  },500)}  
+  if(question == q28){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q30;
+   question = q30;
+   document.getElementById("history").innerHTML += "you said no to: "+ q28 +"<br>";
+  },500)}  
+  if(question == q29){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q29 +"-------"+"<br>";//---------ENDING---------
+  },500)}  
+  if(question == q30){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q32;
+   question = q32;
+   document.getElementById("history").innerHTML += "you said no to: "+ q30 +"<br>";
+  },500)}  
+  if(question == q31){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q31 +"-------"+"<br>";//---------ENDING---------
+  },500)}  
+  if(question == q32){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q40;
+    document.getElementById("replaypop").style.display = "block"; 
+    document.getElementById("blackScrPop").style.display = "block"; 
+   question = q40;
+   document.getElementById("history").innerHTML += "you said no to: "+ q32 +"<br>";
+  },500)}  
+  if(question == q33){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q35;
+   question = q35;
+   document.getElementById("history").innerHTML += "you said no to: "+ q33 +"<br>";
+   document.getElementById("replaypop").style.display = "block"; 
+   document.getElementById("blackScrPop").style.display = "block"; 
+  },500)}  
+  if(question == q34){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q34 +"-------"+"<br>";//---------ENDING---------
+  },500)}  
+  if(question == q35){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q35 +"-------"+"<br>";//---------ENDING---------
+  },500)}  
+  if(question == q36){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q32;
+   question = q32;
+   document.getElementById("history").innerHTML += "you said no to: "+ q36 +"<br>";
+  },500)}  
+  if(question == q37){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q37 +"-------"+"<br>";//---------ENDING---------
+  },500)}  
+  if(question == q38){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q36;
+   question = q36;
+   document.getElementById("history").innerHTML += "you said no to: "+ q38 +"<br>";
+  },500)}  
+  if(question == q39){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"we suggest you to "+ q39 +"-------"+"<br>";//---------ENDING---------
+  },500)}  
+  if(question == q40){
+  setTimeout(function(){
+    document.getElementById("question").innerHTML = q1;
+   question = q1;
+   document.getElementById("history").innerHTML += "-------"+"sorry. "+ q40 + ":( -------"+"<br>";//---------ENDING---------
+  },500)}  
+  
+  
+  
+}//start of the no button 
+</script>
